@@ -22,7 +22,7 @@ public class OrderRepository {
     return entityManager.find(Order.class, id);
   }
 
-  //TODO: 주문 검색
+  // 주문 검색
   public List<Order> findAll(OrderSearch orderSearch){
     String jpql = "select o from Order o join o.member m where o.status = :status and m.name like :name";
     return entityManager.createQuery(jpql,Order.class)
