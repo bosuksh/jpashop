@@ -1,4 +1,4 @@
-package jpabook.jpashop.controller;
+package jpabook.jpashop.controller.dto;
 
 import jpabook.jpashop.domain.Address;
 import lombok.Getter;
